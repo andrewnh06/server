@@ -16,6 +16,11 @@ void erase_text(int count);
 
 int main() {
 
+	HWND hwnd = GetConsoleWindow();
+	HMENU hmenu = GetSystemMenu(hwnd, false);
+
+	EnableMenuItem(hmenu, SC_CLOSE, MF_GRAYED);
+
 	WSADATA winsock_data;
 	WSAStartup(MAKEWORD(2, 0), &winsock_data);
 
