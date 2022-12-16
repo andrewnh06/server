@@ -74,12 +74,6 @@ int main() {
 
 		}
 
-		std::cout << "Clients:\n" << std::endl;
-
-		for (terminal c : clients) {
-			std::cout << c.id << ". " << c.name << std::endl;
-		}
-
 	}
 }
 
